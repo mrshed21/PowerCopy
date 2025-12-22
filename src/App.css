@@ -1,0 +1,18 @@
+@keyframes powerPulse {
+  0%, 100% { 
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% { 
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.power-bolt {
+  position: absolute;
+  top: 33%;
+  left: 33.33%;
+  transform: translate(-50%, -50%);
+  animation: powerPulse 1.5s ease-in-out infinite;
+}

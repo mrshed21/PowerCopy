@@ -11,7 +11,7 @@ export default function ReklamSection() {
             <div className="text-center flex flex-col justify-center items-center w-1/2 gap-4 max-w-md mx-auto">
                 <h3 className="text-xl font-semibold bg-black text-white w-60  py-3 mb-2">Julklappstips</h3>
                 <p className="text-white bg-black/50 py-2 w-full">Julklappsköpen klara på några klick</p>
-                <Button className="mt-4 w-48 mx-auto bg-orange-500 py-4 px-8 hover:bg-orange-600 transition-colors duration-200 rounded-lg whitespace-nowrap text-lg">Se julklappar</Button>
+                <Button className="mt-4 w-48 mx-auto bg-yellow-500 py-4 px-8 hover:bg-yellow-600 transition-colors duration-200 rounded-lg whitespace-nowrap text-lg">Se julklappar</Button>
             </div>
         </div>
     )

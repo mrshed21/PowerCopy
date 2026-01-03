@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -19,7 +20,11 @@ export default function CardProduct({
   price = 50,
   discountLabel = "20% OFF",
   inStock = true,
+  categoryId = "category-1",
+  brandId = "brand-1",
+  typeId = "type-1",
 }) {
+  const navigate = useNavigate();
   return (
     <Card className="relative w-[250px]  rounded-2xl shadow-md hover:shadow-lg transition flex-shrink-0">
 
@@ -54,12 +59,12 @@ export default function CardProduct({
         </h3>
 
         {/* Rating */}
-        <div className="flex items-center gap-1 mt-2 text-orange-400">
+        <div className="flex items-center gap-1 mt-2 text-yellow-400">
           {[...Array(5)].map((_, i) => (
             <FaStar
               key={i}
               size={14}
-              className={i < rating ? "fill-orange-400" : "fill-gray-300"}
+              className={i < rating ? "fill-yellow-400" : "fill-gray-300"}
             />
           ))}
         </div>
@@ -93,7 +98,7 @@ export default function CardProduct({
           {inStock ? "Finns i lager" : "Slut i lager"}
         </span>
 
-        <Button size="sm">Köp</Button>
+        <Button className="bg-blue-500 hover:bg-blue-600 text-white cursor-pointer active:scale-95" size="sm" onClick={() => navigate(`/${categoryId}/${brandId}/${typeId}`)}>Köp</Button>
       </CardFooter>
     </Card>
   )

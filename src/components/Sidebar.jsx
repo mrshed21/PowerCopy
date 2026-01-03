@@ -16,7 +16,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 
 
 
-import { catigory } from "../data/categories"
+import { categories } from "../data/categories"
 import { Link, useLocation } from "react-router-dom";
 
 
@@ -28,13 +28,13 @@ export function AppSidebar() {
     <Sidebar className="z-50">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel className="flex justify-between bg-[#474747] text-white p-6 mb-2 shadow-md"><p className="flex-1">Application</p>  <p className="text-red-500"><SidebarTrigger icon={"X"} /></p></SidebarGroupLabel>
+          <SidebarGroupLabel className="flex justify-between bg-[#474747] text-white p-6 mb-2 shadow-md"><p className="flex-1 text-xl text-yellow-500 ">SE Power</p>  <p className="text-red-500"><SidebarTrigger icon={"X"} /></p></SidebarGroupLabel>
 
           <SidebarGroupContent>
             <SidebarMenu>
-              {catigory.map((item) => (
+              {categories.map((item) => (
                 <SidebarMenuItem key={item.name}>
-                  <SidebarMenuButton isActive={location.pathname === item.url} asChild>
+                  <SidebarMenuButton isActive={location.pathname.includes(item.url)} asChild>
                     <Link to={item.url}>
                       <span>{item.name}</span>
                     </Link>

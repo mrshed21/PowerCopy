@@ -27,24 +27,24 @@ const Footer = () => {
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                     <div className="text-center md:text-left">
                         <h2 className='text-5xl font-bold'>60</h2>
-                        <p className='text-2xl text-orange-500 mt-1'>DAGARS ÖPPET KÖP</p>
+                        <p className='text-2xl text-yellow-500 mt-1'>DAGARS ÖPPET KÖP</p>
                     </div>
                     <div className="text-center md:text-left">
                         <h2 className='text-5xl font-bold'>SNABB</h2>
-                        <p className='text-2xl text-orange-500 mt-1'>LEVERANS</p>
+                        <p className='text-2xl text-yellow-500 mt-1'>LEVERANS</p>
                     </div>
                     <div className="text-center md:text-left">
                         <h2 className='text-5xl font-bold'>20,000+</h2>
-                        <p className='text-2xl text-orange-500 mt-1'>PRODUKTER I SORTIMENTET</p>
+                        <p className='text-2xl text-yellow-500 mt-1'>PRODUKTER I SORTIMENTET</p>
                     </div>
                     <div className="text-center md:text-left">
                         <h2 className='text-5xl font-bold'>2% BONUS</h2>
-                        <p className='text-2xl text-orange-500 mt-1'>UNIK KUNDKLUBB</p>
+                        <p className='text-2xl text-yellow-500 mt-1'>UNIK KUNDKLUBB</p>
                     </div>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                     <div className="text-center md:text-left">
-                        <h2 className='text-2xl font-bold  border-b-2 pb-4 border-orange-500'>Tips & inspiration</h2>
+                        <h2 className='text-2xl font-bold  border-b-2 pb-4 border-yellow-500'>Tips & inspiration</h2>
                         <div className="space-y-2 mt-3">
                             <p>köpguider</p>
                             <p>Produkter</p>
@@ -53,7 +53,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="text-center md:text-left">
-                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-orange-500'>Hjälp & vägledning</h2>
+                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-yellow-500'>Hjälp & vägledning</h2>
                         <div className="space-y-2 mt-3">
                             <p>Vanliga frågor</p>
                             <p>Ångrat köp och retur</p>
@@ -63,7 +63,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="text-center md:text-left">
-                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-orange-500'>Tipsar</h2>
+                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-yellow-500'>Tipsar</h2>
                         <div className="space-y-2 mt-3">
                             <p>Bläckväljaren</p>
                             <p>Abonnemang</p>
@@ -73,7 +73,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="text-center md:text-left">
-                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-orange-500'>Vi är POWER</h2>
+                        <h2 className='text-2xl font-bold border-b-2 pb-4 border-yellow-500'>Vi är POWER</h2>
                         <div className="space-y-2 mt-3">
                             <p>Om POWER</p>
                             <p>MyPOWER</p>

@@ -13,7 +13,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar"
 
 
 
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo.png";
 import { Input } from "./ui/input";
 import { Button } from "@/components/ui/button"
 import { Link , useNavigate } from "react-router-dom"
@@ -36,29 +36,29 @@ const NavBar = () => {
           <CiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
         </div>
         <Button onClick={() => navigate('/kundservice')} variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-gray-600">
-         Kundservice <IoChatbubbleOutline className="h-5 w-5 text-orange-400" /> 
+         Kundservice <IoChatbubbleOutline className="h-5 w-5 text-yellow-400" /> 
         </Button>
 
 
         <Button variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-gray-600">
-        Hitta varuhus <CiLocationOn className="h-5 w-5 text-orange-400" /> 
+        Hitta varuhus <CiLocationOn className="h-5 w-5 text-yellow-400" /> 
         </Button>
 
 
 
         <Button variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-gray-600">
-         <FaRegHeart className="h-5 w-5 text-orange-400" /> 
+         <FaRegHeart className="h-5 w-5 text-yellow-400" /> 
         </Button>
 
 
 
-        <Button variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-orange-600 bg-orange-500">
+        <Button variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-yellow-600 bg-yellow-500">
          Varukorg <IoBagHandleOutline className="h-5 w-5 " /> 
         </Button>
 
 
         <Button variant="default" className="ml-4 flex items-center gap-2 cursor-pointer hover:bg-gray-600">
-         MyPOWER <FaRegUser className="h-5 w-5 text-orange-400" /> 
+         MyPOWER <FaRegUser className="h-5 w-5 text-yellow-400" /> 
         </Button>
 
       </div>

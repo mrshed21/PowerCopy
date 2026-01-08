@@ -9,12 +9,17 @@ import BildReklam from '@/components/BildReklam';
 import WeekKampanj from '@/components/WeekKampanj';
 
 
+// data 
+import { categories } from '@/data/categories';
+
+
+
 export default function HomePage() {
   return (
     <div className=" min-h-screen max-w-6xl mx-auto ">
         <Kampanj />
         <Featurs />
-        <UnderKategorier />
+        <UnderKategorier categories={categories} />
         <CarouselImage />
         <PopularaProdukter />
         <ReklamSection />

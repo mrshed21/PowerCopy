@@ -35,7 +35,7 @@ export function AppSidebar() {
               {categories.map((item) => (
                 <SidebarMenuItem key={item.name}>
                   <SidebarMenuButton isActive={location.pathname.includes(item.url)} asChild>
-                    <Link to={item.url}>
+                    <Link to={`${item.slug}`}>
                       <span>{item.name}</span>
                     </Link>
                   </SidebarMenuButton>

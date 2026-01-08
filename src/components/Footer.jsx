@@ -22,7 +22,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#333] text-white  grid grid-rows-2">
+        <footer className="bg-[#333] text-white  grid grid-rows-2 w-full">
             <div className="max-w-6xl py-20 mx-auto px-4">
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                     <div className="text-center md:text-left">

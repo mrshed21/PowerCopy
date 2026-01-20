@@ -14,6 +14,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import PageNotFound from './pages/PageNotFound';
 import CategoryPage from './pages/CategoryPage';
+import Services from './pages/Services';
 
 function App() {
 
@@ -28,7 +29,9 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<div className="py-8">About</div>} />
+              
               <Route path="/contact" element={<div className="py-8">Contact</div>} />
+              <Route path="/kundservice" element={<Services />} />
               <Route path="/:category" element={<CategoryPage />} /> 
 
               <Route path="*" element={<PageNotFound />} />

@@ -15,6 +15,8 @@ import HomePage from './pages/HomePage';
 import PageNotFound from './pages/PageNotFound';
 import CategoryPage from './pages/CategoryPage';
 import Services from './pages/Services';
+import SubCategoryPage from './pages/SubCategoryPage';
+import ProductPage from './pages/ProductPage';
 
 function App() {
 
@@ -33,6 +35,8 @@ function App() {
               <Route path="/contact" element={<div className="py-8">Contact</div>} />
               <Route path="/kundservice" element={<Services />} />
               <Route path="/:category" element={<CategoryPage />} /> 
+              <Route path="/:category/:subCategory" element={<SubCategoryPage />} /> 
+              <Route path="/:category/:subCategory/:productId" element={<ProductPage />} />
 
               <Route path="*" element={<PageNotFound />} />
             </Routes>

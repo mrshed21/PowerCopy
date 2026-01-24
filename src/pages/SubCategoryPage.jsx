@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom"
 import { subCategories } from "../data/subCategories";
-import UnderKategorier from "@/components/HomePage/UnderKategorier";
 import NewsCards from "@/components/NewsCards";
 import FilteredProducts from "@/components/categorypage/FilteredProducts";
 import PopularaProdukter from "@/components/PopularaProdukter";
@@ -10,8 +9,8 @@ import { mobileCategoryContent } from "@/data/categoryContent";
 
 
 
-export default function CategoryPage() {
-  const { category } = useParams();
+export default function SubCategoryPage() {
+  const { category , subCategory } = useParams();
 
 
   const relatedSubCategories = subCategories.filter(
@@ -23,8 +22,7 @@ export default function CategoryPage() {
     <>
       <div className=" max-w-6xl mx-auto px-4">
 
-        <div className="text-4xl font-bold mb-4 "> {category}</div>
-        <UnderKategorier categories={relatedSubCategories} />
+        <div className="text-4xl font-bold mb-4 "> {subCategory}</div>
         <NewsCards />
       </div>
       <div className="bg-gray-100 w-full ">

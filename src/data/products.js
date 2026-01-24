@@ -11,8 +11,9 @@ export const products = [
     discountLabel: "SPARA 300:-",
     inStock: true,
     categoryId: "personvard",
+    subCategoryId: "haarvaard",
     brandId: "samsung",
-    typeId: "smart-tv",
+    typeId: "haarvaard",
   },
 
   {
@@ -27,6 +28,7 @@ export const products = [
     discountLabel: "20% OFF",
     inStock: true,
     categoryId: "gaming",
+    subCategoryId: "headset",
     brandId: "samsung",
     typeId: "smart-tv",
   },
@@ -43,6 +45,7 @@ export const products = [
     discountLabel: "SPARA 1000:-",
     inStock: false,
     categoryId: "tv-ljud",
+    subCategoryId: "tv",
     brandId: "samsung",
     typeId: "smart-tv",
   },

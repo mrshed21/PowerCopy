@@ -2,11 +2,11 @@ import React from "react";
 import NewsCard from "./NewsCard";
 import { news } from "@/data/news";
 
-export default function NewsCards() {
+export default function NewsCards({ title  }) {
   return (
     <div className="py-8 ">
       <h2 className="text-2xl font-bold mb-4 text-center">
-        Nyheter
+        {title}
       </h2>
       <div className="flex  justify-center gap-4 py-4 overflow-x-auto">
         {news.map((newItem) => (

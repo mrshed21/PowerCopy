@@ -34,7 +34,7 @@ export default function Services() {
                     ))}
                 </div>
                 <SePowerComponent />
-                <div className='flex flex-wrap gap-4 justify-center'>
+                <div className='flex flex-wrap gap-6 justify-center'>
                     {services.map((service, index) => (
                         <ServiceCard key={index} title={service.title} description={service.description} action={service.action} />
                     ))}

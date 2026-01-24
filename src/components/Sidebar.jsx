@@ -23,6 +23,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export function AppSidebar() {
   const location = useLocation();
+  console.log(location.pathname)
 
   return (
     <Sidebar className="z-50">
@@ -34,7 +35,7 @@ export function AppSidebar() {
             <SidebarMenu>
               {categories.map((item) => (
                 <SidebarMenuItem key={item.name}>
-                  <SidebarMenuButton isActive={location.pathname.includes(item.url)} asChild>
+                  <SidebarMenuButton isActive={location.pathname === `/${item.slug}` || location.pathname.startsWith(`/${item.slug}/`)} asChild>
                     <Link to={`${item.slug}`}>
                       <span>{item.name}</span>
                     </Link>

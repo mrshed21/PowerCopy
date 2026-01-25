@@ -4,7 +4,7 @@ import bolt from '../assets/bolt.png'
 import { Link } from 'react-router-dom'
 export default function PageNotFound() {
     return (
-        <div className='flex  items-center gap-4 justify-center '>
+        <div className='flex  items-center gap-4 justify-center px-2'>
             <div className='flex pr-4 flex-col gap-4 w-1/2'>
                 <h2 className='text-6xl text-yellow-500 font-bold'>Sidan hittades inte</h2>
                 <p className='text-2xl  font-bold'>Oj... något gick galet!</p>

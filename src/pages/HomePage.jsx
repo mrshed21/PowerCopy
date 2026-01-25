@@ -16,23 +16,25 @@ import { categories } from '@/data/categories';
 
 export default function HomePage() {
   return (
-    <div className=" min-h-screen max-w-6xl mx-auto ">
+    <div className=" min-h-screen max-w-6xl w-full mx-auto ">
         <Kampanj />
         <Featurs />
         <UnderKategorier categories={categories} />
         <CarouselImage />
         <PopularaProdukter />
         <ReklamSection />
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap justify-center">
             <BildReklam />
             <BildReklam />
         </div>
         <WeekKampanj />
-         <div className="flex gap-4">
-            <BildReklam />
-            <BildReklam />
-            <BildReklam />
-        </div>
+        <div className="flex gap-4 flex-wrap justify-center">
+           <BildReklam />
+           <BildReklam />
+           <BildReklam />
+       </div> 
+        {/* 
+        */}
     </div>
   )
 }

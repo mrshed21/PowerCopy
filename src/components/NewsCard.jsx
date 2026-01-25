@@ -14,7 +14,7 @@ export default function NewsCard({
 }) {
     const navigate = useNavigate();
     return (
-        <Card className="relative w-[250px]  rounded-2xl shadow-md hover:shadow-lg transition flex-shrink-0 py-0 overflow-hidden">
+        <Card className="relative w-[250px] max-w-[85vw] sm:max-w-none rounded-2xl shadow-md hover:shadow-lg transition flex-shrink-0 py-0 overflow-hidden">
 
 
 
@@ -29,7 +29,7 @@ export default function NewsCard({
                 <div className="p-4">
 
                     {/* Title */}
-                    <h3 className="mt-4 text-sm font-semibold leading-tight">
+                    <h3 className="mt-2 sm:mt-4 text-xs sm:text-sm font-semibold leading-tight">
                         {title}
                     </h3>
 

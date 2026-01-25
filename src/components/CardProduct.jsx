@@ -21,12 +21,12 @@ export default function CardProduct({
   discountLabel = "20% OFF",
   inStock = true,
   categoryId = "category-1",
-  brandId = "brand-1",
-  typeId = "type-1",
+  subcategoryId = "sub-category-1",
+  productslug = "product-slug",
 }) {
   const navigate = useNavigate();
   return (
-    <Card className="relative w-[250px]  rounded-2xl shadow-md hover:shadow-lg transition flex-shrink-0">
+    <Card className="relative w-[250px] max-w-[85vw] sm:max-w-none rounded-2xl shadow-md hover:shadow-lg transition flex-shrink-0">
 
       {/* Discount Badge */}
       {discountLabel && (
@@ -50,11 +50,11 @@ export default function CardProduct({
         <img
           src={image}
           alt={title}
-          className="mx-auto h-40 object-contain"
+          className="mx-auto h-32 sm:h-40 object-contain"
         />
 
         {/* Title */}
-        <h3 className="mt-4 text-sm font-semibold leading-tight">
+        <h3 className="mt-4 text-xs sm:text-sm font-semibold leading-tight">
           {title}
         </h3>
 
@@ -79,11 +79,11 @@ export default function CardProduct({
         {/* Price */}
         <div className="mt-4">
           {oldPrice && (
-            <span className="text-sm text-red-500 line-through mr-2">
+            <span className="text-xs sm:text-sm text-red-500 line-through mr-2">
               {oldPrice} kr
             </span>
           )}
-          <span className="text-xl font-bold text-red-600">
+          <span className="text-lg sm:text-xl font-bold text-red-600">
             {price} kr
           </span>
         </div>
@@ -98,8 +98,9 @@ export default function CardProduct({
           {inStock ? "Finns i lager" : "Slut i lager"}
         </span>
 
-        <Button className="bg-blue-500 hover:bg-blue-600 text-white cursor-pointer active:scale-95" size="sm" onClick={() => navigate(`/${categoryId}/${brandId}/${typeId}`)}>Köp</Button>
+        <Button className="bg-blue-500 hover:bg-blue-600 text-white cursor-pointer active:scale-95 text-xs sm:text-sm" size="sm" onClick={() => navigate(`/${categoryId}/${subcategoryId}/${productslug}`)}>Köp</Button>
       </CardFooter>
     </Card>
   )
 }
+

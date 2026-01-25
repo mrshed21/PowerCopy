@@ -4,11 +4,11 @@ import { news } from "@/data/news";
 
 export default function NewsCards({ title  }) {
   return (
-    <div className="py-8 ">
-      <h2 className="text-2xl font-bold mb-4 text-center">
+    <div className="py-8 px-4">
+      <h2 className="text-xl sm:text-2xl font-bold mb-4 text-center">
         {title}
       </h2>
-      <div className="flex  justify-center gap-4 py-4 overflow-x-auto">
+      <div className="flex justify-start sm:justify-center gap-3 sm:gap-4 py-4 overflow-x-auto">
         {news.map((newItem) => (
           <NewsCard
             key={newItem.id}

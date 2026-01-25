@@ -22,7 +22,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#333] text-white  grid grid-rows-2 w-full">
+        <footer className="bg-[#333] text-white  grid  w-full">
             <div className="max-w-6xl py-20 mx-auto px-4">
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                     <div className="text-center md:text-left">
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="flex flex-col justify-center items-center mx-auto w-full  bg-[#474747] gap-10">
+            <div className="flex  p-2 flex-col justify-center items-center mx-auto w-full  bg-[#474747] gap-10 py-4">
                 <div className="flex items-center  gap-2">
                     <IoColorPaletteOutline />
                     <span>Cookie- och datainställningar</span>
@@ -109,7 +109,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap justify-center">
                     <h3 className="text-xl font-bold">Säker betalning med:</h3>
                     <div className="flex items-center gap-2 w-16 ">
                         <img src={klarna} alt="Klarna" className="h-8 object-contain" />
@@ -131,7 +131,7 @@ const Footer = () => {
 
 
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 flex-wrap">
                     <h3 className="text-xl font-bold">Vi levererar med:</h3>
                     <div className="flex items-center gap-2 w-16 ">
                         <img src={postnord} alt="PostNord" className="h-8 object-contain" />

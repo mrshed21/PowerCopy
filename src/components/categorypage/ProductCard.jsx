@@ -4,8 +4,9 @@ import { FiHeart } from "react-icons/fi"
 import { Link } from "react-router-dom"
 
 export default function ProductCard({ product }) {
+  console.log(product)
   return (
-    <Link to={`/${product.categoryId}/${product.subCategoryId}/${product.slug}`} className="block py-4">
+    <Link to={`/${product.categoryId}/${product.subcategoryId}/${product.slug}`} className="block py-2 sm:py-4">
       <Card className="relative p-4 rounded-xl hover:shadow-lg transition">
 
         {/* Discount */}
@@ -16,19 +17,19 @@ export default function ProductCard({ product }) {
         )}
 
         {/* MAIN ROW */}
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
 
           {/* LEFT – Image */}
-          <div className="w-[214px] h-[214px] shrink-0">
+          <div className="w-full sm:w-[214px] h-48 sm:h-[214px] shrink-0 max-w-[214px] mx-auto sm:mx-0">
             <img
-              src={product.image}
+              src={product.images[0]}
               alt={product.title}
               className="w-full h-full object-contain"
             />
           </div>
 
           {/* CENTER – Info */}
-          <div className="flex-1  pl-4">
+          <div className="flex-1 pl-0 sm:pl-4">
             <h3 className="font-semibold text-sm mb-2">
               {product.title}
             </h3>
@@ -45,8 +46,8 @@ export default function ProductCard({ product }) {
           </div>
 
           {/* RIGHT – Price */}
-          <div className="w-24 text-right">
-            <FiHeart className="ml-auto mb-4 text-muted-foreground" />
+          <div className="w-full sm:w-24 text-left sm:text-right mt-4 sm:mt-0">
+            <FiHeart className="sm:ml-auto mb-4 text-muted-foreground" />
 
             {product.oldPrice && (
               <div className="text-sm line-through text-muted-foreground">

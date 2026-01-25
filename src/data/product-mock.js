@@ -4,6 +4,7 @@ export const product = {
   title: "Apple iPhone 15 128GB Svart",
   brandId: "apple",
   categoryId: "mobiltelefoner",
+  subcategoryId: "smartphones",  
   images: [
     "https://placehold.co/400x400",
     "https://placehold.co/400x400",
@@ -38,7 +39,7 @@ export const product = {
   ],
 };
 
-export const products = [
+/* export const products = [
   {
     id: "p-002",
     slug: "apple-iphone-14-128gb",
@@ -64,3 +65,4 @@ export const products = [
     images: ["https://placehold.co/200x200"],
   },
 ];
+ */

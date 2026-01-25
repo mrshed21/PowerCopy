@@ -21,9 +21,9 @@ import ProductPage from './pages/ProductPage';
 function App() {
 
   return (
-    <div className='flex flex-col mx-auto w-full justify-center items-center'>
+    <div className='flex flex-col w-full min-h-screen overflow-x-hidden'>
       <SidebarProvider>
-        <div className='min-h-screen flex flex-col items-center'>
+        <div className='min-h-screen flex flex-col w-full'>
           <ScrollToTop />
           <NavBar />
           <AppSidebar />
@@ -35,9 +35,10 @@ function App() {
               <Route path="/contact" element={<div className="py-8">Contact</div>} />
               <Route path="/kundservice" element={<Services />} />
               <Route path="/:category" element={<CategoryPage />} /> 
-              <Route path="/:category/:subCategory" element={<SubCategoryPage />} /> 
-              <Route path="/:category/:subCategory/:productId" element={<ProductPage />} />
+              <Route path="/:category/:subcategoryId" element={<SubCategoryPage />} /> 
+              <Route path="/:category/:subcategoryId/:productId" element={<ProductPage />} />
 
+              <Route path="/404" element={<PageNotFound />} />
               <Route path="*" element={<PageNotFound />} />
             </Routes>
           {/* </div> */}

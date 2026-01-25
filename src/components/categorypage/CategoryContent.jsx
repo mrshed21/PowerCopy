@@ -2,7 +2,7 @@
 
 export default function CategoryContent({ content }) {
   return (
-    <section className="mt-12 space-y-10">
+    <section className="mt-12 space-y-10 px-2 mx-auto max-w-6xl">
       <h1 className="text-3xl font-bold">{content.title}</h1>
 
       <p className="text-gray-600 leading-relaxed">

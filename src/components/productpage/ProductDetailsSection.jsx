@@ -2,12 +2,13 @@
 
 import  { useState } from "react";
 
-export default function ProductDetailsSection({ sections }) {
+export default function ProductDetailsSection({ product }) {
   const [openIndex, setOpenIndex] = useState(0);
+  console.log(product?.details?.length);
 
   return (
     <div className="mt-8 space-y-4">
-      {sections.map((sec, idx) => (
+      {product?.details?.map((sec, idx) => (
         <div key={idx} className="border rounded shadow-sm">
           <button
             className="w-full text-left p-4 font-semibold bg-gray-100 hover:bg-gray-200"

@@ -48,9 +48,7 @@ if (loading) return <p>Laddar produkt...</p>;
     )}
       <NewsCards />
       {relatedProducts.length > 0 && (
-        <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold mb-4">Relaterade produkter</h2>
-         
+        <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">         
           <PopularaProdukter title="Relaterade produkter" products={relatedProducts} />
         </div>
       )}
